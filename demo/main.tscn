@@ -6,6 +6,15 @@
 
 [node name="GDExample" type="GDExample" parent="."]
 speed = 7.29
-position = Vector2(685, 265)
+position = Vector2(803, 87)
 texture = ExtResource("1_ig7tw")
 centered = false
+
+[node name="Player" type="Player" parent="."]
+speed = 278.0
+position = Vector2(373, 197)
+
+[node name="GDExample" type="GDExample" parent="Player"]
+speed = 2.2
+position = Vector2(-6, 1)
+texture = ExtResource("1_ig7tw")
