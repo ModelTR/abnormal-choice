@@ -1,1 +1,7 @@
 .vscode/
+.sconsign.dblite
+src/gdexample.windows.template_debug.x86_64.obj
+demo/bin/libgdexample.windows.template_debug.x86_64.dll
+demo/bin/libgdexample.windows.template_debug.x86_64.lib
+demo/bin/libgdexample.windows.template_debug.x86_64.exp
+src/register_types.windows.template_debug.x86_64.obj
