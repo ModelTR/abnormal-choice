@@ -12,9 +12,11 @@ void Player::_bind_methods() {
 
     ClassDB::bind_method(D_METHOD("get_speed"), &Player::get_speed);
     ClassDB::bind_method(D_METHOD("set_speed", "speed"), &Player::set_speed);
+    ClassDB::bind_method(D_METHOD("get_gravity"), &Player::get_gravity);
+    ClassDB::bind_method(D_METHOD("set_gravity", "gravity"), &Player::set_gravity);
 
     // 添加编辑器属性
-
+    ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "gravity", PROPERTY_HINT_RANGE, "0,0.98,1"), "set_gravity", "get_gravity");
     ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "speed", PROPERTY_HINT_RANGE, "0,100,0.1"), "set_speed", "get_speed");
 }
 
@@ -22,13 +24,18 @@ void Player::_process(double delta){
 
     // 如果在编辑器中运行，则不处理输入
 
-    if(Engine::get_singleton()->is_editor_hint()){
+    if(Engine::get_singleton()->is_editor_hint()){   
         return;
     }
+
+
 
     // 初始化速度向量
 
     Vector2 velocity(0, 0);
+
+    velocity.y += gravity;  // 应用重力
+    
 
     // 获取输入流
 

@@ -9,6 +9,7 @@ namespace godot{
 
     private:
         double speed;
+        double gravity;
 
     protected:
 	    static void _bind_methods();
@@ -21,5 +22,8 @@ namespace godot{
 
         double get_speed() const { return speed; }
         void set_speed(const double p_speed) { speed = p_speed * 10; }
+        
+        double get_gravity() const { return gravity; }
+        void set_gravity(const float p_gravity) { gravity = p_gravity; }
     };
 }
