@@ -1,6 +1,7 @@
 #pragma once
 
 #include <godot_cpp/classes/sprite2d.hpp>
+#include "player.h"
 
 namespace godot {
 
@@ -17,7 +18,7 @@ protected:
 	static void _bind_methods();
 
 public:
-	GDExample();
+	GDExample() : amplitude(5.0), speed(1.0) {};
 	~GDExample();
 
 	void _process(double delta) override;

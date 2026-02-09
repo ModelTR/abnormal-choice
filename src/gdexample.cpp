@@ -1,6 +1,5 @@
 #include "gdexample.h"
 #include <godot_cpp/core/class_db.hpp>
-
 using namespace godot;
 
 void GDExample::_bind_methods() {
@@ -17,18 +16,15 @@ void GDExample::_bind_methods() {
 	ADD_SIGNAL(MethodInfo("position_changed", PropertyInfo(Variant::OBJECT, "node"), PropertyInfo(Variant::VECTOR2, "new_pos")));
 }
 
-GDExample::GDExample() {
-	// Initialize any variables here.
-	time_passed = 0.0;
-    amplitude = 10.0;
-}
-
 GDExample::~GDExample() {
 	// Add your cleanup here.
 }
 
 void GDExample::_process(double delta) {
+
 	time_passed += speed * delta;
+
+
 
 	Vector2 new_position = Vector2(
 		amplitude + (amplitude * sin(time_passed * 2.0)),

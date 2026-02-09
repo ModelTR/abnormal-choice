@@ -1,0 +1,16 @@
+[
+{
+  "directory": "C:\\godot-pj\\src",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/MD", "/O2", "/IC:\\godot-pj\\godot-cpp\\include", "/IC:\\godot-pj\\godot-cpp\\gen\\include", "/EHsc", "/DNDEBUG", "/Fobuild\\.objs\\src\\windows\\x64\\release\\gdexample.cpp.obj", "gdexample.cpp"],
+  "file": "gdexample.cpp"
+},
+{
+  "directory": "C:\\godot-pj\\src",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/MD", "/O2", "/IC:\\godot-pj\\godot-cpp\\include", "/IC:\\godot-pj\\godot-cpp\\gen\\include", "/EHsc", "/DNDEBUG", "/Fobuild\\.objs\\src\\windows\\x64\\release\\player.cpp.obj", "player.cpp"],
+  "file": "player.cpp"
+},
+{
+  "directory": "C:\\godot-pj\\src",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/MD", "/O2", "/IC:\\godot-pj\\godot-cpp\\include", "/IC:\\godot-pj\\godot-cpp\\gen\\include", "/EHsc", "/DNDEBUG", "/Fobuild\\.objs\\src\\windows\\x64\\release\\register_types.cpp.obj", "register_types.cpp"],
+  "file": "register_types.cpp"
+}]
